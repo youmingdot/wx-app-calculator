@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/page",
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#202020",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#202020"
+  },
+  "debug": true
+}

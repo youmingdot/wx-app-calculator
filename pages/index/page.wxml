@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="header">
+    <view class="userinfo">
+      <image class="avatar" mode="scaleToFill" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nickname">你好{{userInfo.nickName ? " " + userInfo.nickName + " " : ""}}，欢迎体验高仿计算器</text>
+    </view>
+    <view class="entrance" catchTap="">立即进入</view>
+  </view>
+  <view class="welcome">
+    <text class="title">{{welcome}}</text>
+    <image class="qrcode" mode="scaleToFill" src="../../images/qrcode.png"></image>
+  </view>
+</view>
