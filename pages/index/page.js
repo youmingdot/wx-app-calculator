@@ -8,10 +8,17 @@ Page({
     }
   },
 
-  onLoad: function (callback) {
+  onLoad: function (options) {
     var that = this
+    // 获取用户信息
     app.getUserInfo(function (userInfo) {
       that.setData({userInfo: userInfo})
+    })
+  },
+
+  entranceTap: function () {
+    wx.navigateTo({
+      url: '../calculator/page'
     })
   }
 })

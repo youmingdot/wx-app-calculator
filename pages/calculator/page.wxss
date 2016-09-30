@@ -1,0 +1,43 @@
+.container.justify {
+  justify-content: flex-end;
+  background: #202020;
+}
+
+.result {
+  width: 100%;
+  padding: 30rpx 25rpx;
+  color: #fff;
+  font-size: 100rpx;
+  text-align: right;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #525252;
+}
+
+.panel .button {
+  width: 187.5rpx;
+  height: 187.5rpx;
+  border: 1rpx #2f2f2f;
+  background: linear-gradient(0deg, #cecece, #cacaca);
+}
+
+.panel .button.long {
+  width: 375rpx;
+}
+
+.panel .button.gray {
+  background: linear-gradient(0deg, #cacbcc, #c7c8c9);
+}
+
+.panel .button.orange {
+
+}
+
+.panel .button .text {
+
+}
