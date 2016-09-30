@@ -3,7 +3,7 @@ App({
     userInfo: null
   },
 
-  getUserInfo: function(callback) {
+  getUserInfo: function (callback) {
     if (this.globalData.userInfo) {
       callback(this.globalData)
     } else {
@@ -19,5 +19,5 @@ App({
         }
       })
     }
-  },
+  }
 })
