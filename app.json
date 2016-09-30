@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/page",
+    "pages/calculator/page"
   ],
   "window": {
     "navigationBarBackgroundColor": "#202020",
