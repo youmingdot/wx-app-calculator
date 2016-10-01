@@ -1,5 +1,5 @@
 <template name="button">
-  <view class="button{{long ? ' long' : ''}}{{color == 'gray' ? ' gray' : ''}}{{color == 'orange' ? ' orange' : ''}}">
+  <view class="button{{style ? ' ' + style : ''}}" catchtap="{{tap}}" data-extra="{{extra}}">
     <view class="text">{{text}}</view>
   </view>
 </template>

@@ -1,26 +1,11 @@
 <import src="button.wxml"/>
 
 <view class="container justify">
-  <view class="result">{{resultText}}</view>
+  <view class="result" catchtouchstart="inputTouchStart" catchtouchmove="inputTouchMove" catchtouchend="inputTouchEnd">{{current}}</view>
   <view class="panel">
-    <template is="button" data="{{text: 'CA', color: 'gray'}}"/>
-    <template is="button" data="{{text: '﹢', color: 'gray'}}"/>
-    <template is="button" data="{{text: '％', color: 'gray'}}"/>
-    <template is="button" data="{{text: '÷', color: 'orange'}}"/>
-    <template is="button" data="{{text: '7'}}"/>
-    <template is="button" data="{{text: '8'}}"/>
-    <template is="button" data="{{text: '9'}}"/>
-    <template is="button" data="{{text: '×', color: 'orange'}}"/>
-    <template is="button" data="{{text: '4'}}"/>
-    <template is="button" data="{{text: '5'}}"/>
-    <template is="button" data="{{text: '6'}}"/>
-    <template is="button" data="{{text: '－', color: 'orange'}}"/>
-    <template is="button" data="{{text: '1'}}"/>
-    <template is="button" data="{{text: '2'}}"/>
-    <template is="button" data="{{text: '3'}}"/>
-    <template is="button" data="{{text: '＋', color: 'orange'}}"/>
-    <template is="button" data="{{text: '0', long: 1}}"/>
-    <template is="button" data="{{text: '.'}}"/>
-    <template is="button" data="{{text: '＝', color: 'orange'}}"/>
+    <template is="button" data="{{text: clearText, style: 'orange', tap: 'clearTap'}}"/>
+    <block wx:for="{{panel}}" wx:for-item="button">
+      <template is="button" data="{{...button}}"/>
+    </block>
   </view>
 </view>

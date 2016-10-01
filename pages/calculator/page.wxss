@@ -22,22 +22,47 @@
 .panel .button {
   width: 187.5rpx;
   height: 187.5rpx;
-  border: 1rpx #2f2f2f;
-  background: linear-gradient(0deg, #cecece, #cacaca);
+  border: 0.5rpx solid #626364;
+  background: #d5d6d7;
+}
+
+.panel .button:active {
+  background: #bdbebf;
 }
 
 .panel .button.long {
   width: 375rpx;
 }
 
-.panel .button.gray {
-  background: linear-gradient(0deg, #cacbcc, #c7c8c9);
+.panel .button.black {
+  background: #2f2f2f;
+}
+
+.panel .button.black:active {
+  background: #101010;
 }
 
 .panel .button.orange {
+  background: #e38748;
+}
 
+.panel .button.orange:active {
+  background: #c94f26;
 }
 
 .panel .button .text {
+  width: 187.5rpx;
+  height: 187.5rpx;
+  line-height: 187.5rpx;
+  text-align: center;
+  color: #212121;
+  font-size: 80rpx;
+}
 
+.panel .button.black .text {
+  color: #fff;
+}
+
+.panel .button.orange .text {
+  color: #fff;
 }
