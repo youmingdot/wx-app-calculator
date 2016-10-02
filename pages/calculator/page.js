@@ -122,7 +122,11 @@ Page({
 
   // 等于号
   operateTap: function () {
-    var result = this.operate(this.data.transit, this.data.current, this.data.operator);
+    var result = this.data.current
+    if (this.data.transit) {
+      result = this.operate(this.data.transit, this.data.current, this.data.operator);
+    }
+
     this.setCurrent(result)
     this.setData({transit: ''})
   },
@@ -138,7 +142,7 @@ Page({
 
   // 清除按钮
   clearTap: function () {
-    if (this.data.current == '') {
+    if (this.data.ca = 'CA') {
       // 清除全部
       this.setData({transit: '', operator: ''})
     }
